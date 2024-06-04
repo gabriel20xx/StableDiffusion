@@ -11,7 +11,7 @@ ENV COMMANDLINE_ARGS=""
 
 RUN apt update && \
 	apt upgrade -y && \
-	apt install wget git python3 python3-venv libgl1 libglib2.0-0 screen jq -y
+	apt install wget git python3 python3-venv libgl1 libglib2.0-0 libtcmalloc-minimal4 screen jq -y
 RUN useradd -ms /bin/bash user
 
 # Stage 2: Prepare Stable Diffusion
